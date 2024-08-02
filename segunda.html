@@ -1,0 +1,215 @@
+<html data-theme="light">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+<body class="mx-4 my-4">
+
+    <div class="flex justify-between">
+        <div class="w-1/2">
+            <span class="text-yellow-600 font-extrabold mr-2">Tipo de Ciclo:</span>
+            <select class="select select-bordered select-sm">
+                <option value="Mensal">MENSAL</option>
+                <option value="Quadrimensal">QUADRIMENSAL</option>
+            </select>
+        </div>
+
+
+
+        <div class="">
+            <button class="btn btn-warning btn-outline btn-sm">Configurar Insumos</button>
+        </div>
+    </div>
+    <div class="flex mt-4">
+        <div class="text-lg text-blue-800 font-bold"> Prazo por insumo
+        </div>
+    </div>
+    <div class="flex text-sm text-blue-800 mt-2">
+        Definir Notificações Automáticas
+
+    </div>
+    <div class="flex">
+        <select class="select select-bordered select-sm">
+            <option value="Mensal">5 dias antes do fim do prazo</option>
+        </select>
+    </div>
+
+    <div class="flex  mt-6 my-2">
+        <div class="w-1/4">
+
+            <input type="checkbox" class="checkbox" />
+            <label class="label-text text-blue-800 mx-1">Selecionar Todos</label>
+
+        </div>
+        <div class="w-3/4 ml-auto">
+            <div class="flex ">
+                <div class="w-1/2"><label class="text-yellow-600 font-bold">Definir data início:</label> <button
+                        class="mx-3 btn btn-outline btn-sm">Dia Útil < __ da Data Fim</button>
+                </div>
+                <div class="w-1/2"><label class="text-yellow-600 font-bold">Definir data início:</label> <button
+                        class="mx-3 btn btn-outline btn-sm">Ultimo Dia Útil do Mês < __ da Data Fim</button>
+                </div>
+                <button class="mx-3 btn bg-gray-600 text-white btn-sm">Definir</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="w-full">
+            <div class="overflow-x-auto">
+                <table class="table table-striped w-full">
+                    <!-- head -->
+                    <thead class="">
+                        <tr class="bg-gray-600 text-white">
+                            <th></th>
+                            <th>Tipo de insumo</th>
+                            <th>Referência</th>
+                            <th>Data início</th>
+                            <th>Data fim</th>
+                            <th>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                    viewBox="0 0 1200 1200">
+                                    <path fill="currentColor"
+                                        d="M600 0C268.629 0 0 268.629 0 600s268.629 600 600 600s600-268.629 600-600S931.371 0 600 0m-95.801 261.841h191.602v242.358h242.358v191.602H695.801v242.358H504.199V695.801H261.841V504.199h242.358z" />
+                                </svg>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="">
+                        <!-- row 1 -->
+                        <tr>
+                            <td><input type="checkbox" class="checkbox" /></td>
+                            <td>PLanilha de Carga</td>
+                            <td>Casos de Referência</td>
+                            <td>>Dia Útil < 5 da Data Fim</td>
+                            <td>>Dia Útil < 25 do Mês -2</td>
+                            <td><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6z" />
+                                </svg></td>
+                        </tr>
+                        <!-- row 2 -->
+                        <tr>
+                            <td><input type="checkbox" class="checkbox" /></td>
+                            <td>Planilha Condiçõ</td>
+                            <td>Casos de Referência</td>
+                            <td>>Dia Útil < 5 da Data Fim</td>
+                            <td>>Dia Útil < 25 do Mês -2</td>
+                            <td><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6z" />
+                                </svg></td>
+                        </tr>
+                        <!-- row 3 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex mt-4">
+        <div class="text-lg text-blue-800 font-bold"> Definir Identificação dos Casos de Referência
+        </div>
+    </div>
+    <div class="flex">
+        <div class="w-full">
+            <div class="overflow-x-auto">
+                <table class="table table-striped w-full">
+                    <!-- head -->
+                    <thead class="">
+                        <tr class="bg-gray-600 text-white">
+                            <th>Casos de Referência</th>
+                            <th> <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em"
+                                    viewBox="0 0 1200 1200">
+                                    <path fill="currentColor"
+                                        d="M600 0C268.629 0 0 268.629 0 600s268.629 600 600 600s600-268.629 600-600S931.371 0 600 0m-95.801 261.841h191.602v242.358h242.358v191.602H695.801v242.358H504.199V695.801H261.841V504.199h242.358z" />
+                                </svg>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="">
+                        <!-- row 1 -->
+                        <tr>
+                            <td>
+                                <div class="flex justify-between">
+                                    <div class="w-1/4 px-4">
+                                        <select class="select select-bordered select-sm w-full">
+                                            <option value="">EXIBIR TIPPO DO CICLO: SIM</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-1/4 px-4">
+                                        <select class="select select-bordered select-sm w-full">
+                                            <option value="">EXIBIR PERIODO: SIM</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-1/4 px-4">
+                                        <select class="select select-bordered select-sm w-full">
+                                            <option value="">PATAMAR DE CARGA</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-1/4 px-4">
+                                        <select class="select select-bordered select-sm w-full">
+                                            <option value="">PATAMAR MMGD</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6z" />
+                                </svg></td>
+
+                        </tr>
+                        <!-- row 2 -->
+                        <tr>
+                            <td>
+                                <div class="flex justify-between">
+                                    <div class="w-1/4 px-4">
+                                        <select class="select select-bordered select-sm w-full">
+                                            <option value="">EXIBIR TIPPO DO CICLO: SIM</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-1/4 px-4">
+                                        <select class="select select-bordered select-sm w-full">
+                                            <option value="">EXIBIR PERIODO: SIM</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-1/4 px-4">
+                                        <select class="select select-bordered select-sm w-full">
+                                            <option value="">PATAMAR DE CARGA</option>
+                                        </select>
+                                    </div>
+                                    <div class="w-1/4 px-4">
+                                        <select class="select select-bordered select-sm w-full">
+                                            <option value="">PATAMAR MMGD</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </td>
+                            <td><svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6z" />
+                                </svg></td>
+                        </tr>
+                        <!-- row 3 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<style>
+    .table-striped,
+    .table-striped>tbody>tr,
+    .table-striped>tbody>tr>td,
+    .table-striped>thead>tr,
+    .table-striped>thead>tr>th {
+        border: 1px solid rgb(150, 150, 150);
+    }
+</style>

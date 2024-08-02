@@ -1,0 +1,58 @@
+<html data-theme="light">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+<body class="mx-4 my-4">
+
+<div class="flex">
+    <div class="text-lg mr-4">
+        <span class="text-blue-600">Identificação</span>
+        <select class="select select-bordered select-sm w-full">
+            <option value="">Identifique o insumo</option>
+        </select>
+    </div>
+    <div class="text-lg mr-4">
+        <span class="text-blue-600">Responsáveis</span>
+        <select class="select select-bordered select-sm w-full">
+            <option value="">Selecione os Responsáveis</option>
+        </select>
+    </div>
+    <div class="text-lg mr-4">
+        <span class="text-blue-600">Referência</span>
+        <select class="select select-bordered select-sm w-full">
+            <option value="">Selecione a Referência</option>
+        </select>
+    </div>
+</div>
+
+<div class="flex mt-6">
+    <span class="text-blue-600">Descrição:</span>
+</div>
+<div class="flex">
+    <textarea placeholder="Descreva o insumo" class="textarea textarea-bordered w-full" name="" id=""></textarea>
+</div>
+
+<div class="flex mt-6">
+    <button class="btn btn-default bg-gray-600 text-white"> Criar Novo Insumo</button>
+    <button class="btn btn-outline mx-4"> Limpar</button>
+</div>
+
+<hr class="my-6">
+
+<div class="flex ">
+    <h2 class="text-blue-600 font-bold text-2xl">Lista de Insumos</h2>
+</div>
+</body>
+
+</html>
+
+<style>
+    .table-striped,
+    .table-striped>tbody>tr,
+    .table-striped>tbody>tr>td,
+    .table-striped>thead>tr,
+    .table-striped>thead>tr>th {
+        border: 1px solid rgb(150, 150, 150);
+    }
+</style>

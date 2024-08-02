@@ -1,0 +1,130 @@
+<html data-theme="light">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+<body class="mx-4 my-4">
+
+<div class="flex justify-between">
+    <div class="div">
+        <button class="btn btn-warning bg-orange-500 text-white">Criar Novo Ciclo</button>
+    </div>
+
+    <div class=" text-blue-600">
+        <button class="btn btn-primary btn-outline ml-4">Criar Novo Ciclo</button>
+        <button class="btn btn-primary btn-outline ml-4">Criar Novo Ciclo</button>
+
+    </div>
+</div>
+
+<div class="flex mt-6 justify-between">
+   <div class="w-2/6">
+  <div class="flex">
+  
+
+
+        <div class="w-2/3">
+          <div class="relative ">
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                  <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                  </svg>
+              </div>
+              <input type="search" id="default-search" class=" block w-full p-4 ps-10 text-sm border border-gray-300 rounded-lg  focus:ring-blue-500 focus:border-blue-500" placeholder="Buscar por Ciclo" required />
+          </div>
+        </div>
+      
+  <div class="w-1/3 mx-4">    <button class="btn btn-outline ">Buscar</button>
+  </div>    
+      
+      
+        
+  </div>
+   </div>
+
+   <div class="w-4/6 text-right">
+    <div><label class="text-yellow-600 font-bold">Filtros</label>
+
+        <select class="select select-bordered mx-4">
+            <option value="">Status: Todos</option>
+        </select>
+        <select class="select select-bordered ">
+            <option value="">Periodo: Todos</option>
+        </select>
+        <button class="btn btn-warning btn-outline ">Filtrar</button>
+
+</div>
+   </div>
+</div>
+
+<div class="flex mt-4">
+    <div class="w-full">
+        <div class="overflow-x-auto">
+            <table class="table table-striped w-full">
+                <!-- head -->
+                <thead class="">
+                    <tr class="bg-gray-600 text-white">
+                       
+                        <th>Tipo de Ciclo</th>
+                        <th>POeríofo</th>
+                        <th>Status</th>
+                        <th>Observações</th>
+                        <th>
+                            
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="">
+                  
+                    <tr>
+                        <td>Mensal</td>
+                        <td>Julho/2024</td>
+                        <td>Aberto até 15/08/2024</td>
+                        <td>>Sem Inconsistências</td>
+                      
+                        <td>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 10.5L21 3m-5 0h5v5m0 6v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+                        </td>
+                    </tr>
+                   
+                    <tr>
+                        <td>Mensal</td>
+                        <td>Julho/2024</td>
+                        <td>Aberto até 15/07/2024</td>
+                        <td>>Sem Inconsistências</td>
+                      
+                        <td>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 10.5L21 3m-5 0h5v5m0 6v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Quadrimensal</td>
+                        <td>Q1/2024</td>
+                        <td>VF Fechada em 15/06/2024</td>
+                        <td>>Sem Inconsistências</td>
+
+                        <td>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.5 10.5L21 3m-5 0h5v5m0 6v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5"/></svg>
+                        </td>
+                    </tr>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+<style>
+    .table-striped,
+    .table-striped>tbody>tr,
+    .table-striped>tbody>tr>td,
+    .table-striped>thead>tr,
+    .table-striped>thead>tr>th {
+        border: 1px solid rgb(150, 150, 150);
+    }
+</style>
